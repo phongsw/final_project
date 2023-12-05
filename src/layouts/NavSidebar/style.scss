@@ -1,0 +1,94 @@
+html,
+body,
+#content {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  height: 100%;
+  background-color: #fff;
+}
+
+.nav-link {
+  color: #171d24;
+  display: block;
+  padding: 11px 0 10px 0;
+  text-decoration: none;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #147dd4;
+}
+
+.nav-panel::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.nav-panel:hover::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #707174;
+}
+
+.icon-item:hover {
+  border-color: #0072d0 !important;
+}
+
+.copiable-text:hover {
+  color: #171d24 !important;
+}
+
+.icon-detail-codes pre {
+  font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.nav-panel > a {
+  padding-left: 16px;
+}
+
+.nav-panel .ms-TooltipHost {
+  margin-left: -19px;
+}
+
+.directory-treeview .k-treeview-leaf-text {
+  flex: 1;
+}
+
+.directory-treeview .directory-tree-action {
+  display: none;
+}
+
+.directory-treeview .k-treeview-mid:hover .directory-tree-action {
+  display: inline-block;
+}
+
+.mdl2-icon {
+  font-size: 13px;
+  font-family: 'FabricMDL2Icons';
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  font-style: normal;
+  color: #323e4d;
+  font-size: 32px;
+}
+
+.nav-sidebar {
+  width: 280px;
+  overflow-y: auto;
+  height: calc(100vh - 60px);
+  padding: 16px;
+  margin-left: calc(50% - 640px);
+
+  @media screen and (max-width: 1280px) {
+    margin-left: 0;
+  }
+}

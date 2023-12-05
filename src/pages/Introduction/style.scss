@@ -1,0 +1,25 @@
+.logo-intro {
+  margin-bottom: -16px;
+  margin-top: 9px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.table-style-intro {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+
+  .cell-intro {
+    border: 1px solid #f2f3f4;
+    padding: 8px;
+  }
+
+  .code-intro {
+    border: 1px solid #f2f3f4;
+    padding: 8px;
+    width: '100%';
+  }
+}

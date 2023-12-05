@@ -1,0 +1,8 @@
+.shell-container {
+  display: flex;
+  padding: 15px calc(50% - 640px) 40px 10px;
+  overflow-y: auto;
+  width: calc(100% - 280px);
+  height: calc(100vh - 60px);
+  overflow-x: auto;
+}

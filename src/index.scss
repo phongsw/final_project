@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Noto Sans JP';
+  src:
+    url('./assets/font/NotoSansJP-Bold.woff2') format('woff2'),
+    url('./assets/font/NotoSansJP-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src:
+    url('./assets/font/NotoSansJP-Medium.woff2') format('woff2'),
+    url('./assets/font/NotoSansJP-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src:
+    url('./assets/font/NotoSansJP-Regular.woff2') format('woff2'),
+    url('./assets/font/NotoSansJP-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src:
+    url('./assets/font/NotoSansJP-SemiBold.woff2') format('woff2'),
+    url('./assets/font/NotoSansJP-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src:
+    url('./assets/font/NotoSansJP-Bold.woff2') format('woff2'),
+    url('./assets/font/NotoSansJP-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src:
+    url('./assets/font/NotoSansJP-Medium.woff2') format('woff2'),
+    url('./assets/font/NotoSansJP-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src:
+    url('./assets/font/NotoSansJP-Regular.woff2') format('woff2'),
+    url('./assets/font/NotoSansJP-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src:
+    url('./assets/font/NotoSansJP-SemiBold.woff2') format('woff2'),
+    url('./assets/font/NotoSansJP-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+// change theme css
+.teal,
+.ochre,
+.violet,
+.magenta,
+.lavender,
+.pewter,
+.mint {
+  .button {
+    background-color: var(--color-primary);
+  }
+
+  .link {
+    color: var(--color-primary);
+  }
+}
+
+.teal {
+  --color-primary: rgb(0, 130, 146);
+}
+
+.ochre {
+  --color-primary: rgb(184, 86, 75);
+}
+
+.violet {
+  --color-primary: rgb(122, 95, 179);
+}
+
+.magenta {
+  --color-primary: rgb(207, 41, 132);
+}
+
+.lavender {
+  --color-primary: rgb(108, 109, 179);
+}
+
+.pewter {
+  --color-primary: rgb(95, 115, 125);
+}
+
+.mint {
+  --color-primary: rgb(23, 179, 134);
+}

@@ -1,0 +1,16 @@
+{
+  "titleDialog": "Dialog",
+  "subTitleDialog": "Dialoge sind modale Steuerung. Es handelt sich um ein temporäres Popup, das Benutzer zur Interaktion mit der Anwendung verpflichtet.",
+  "noteUseTitle": "Wann zu verwenden",
+  "noteUseContentFirst": "1. Es wird zum Bestätigen von Aktionen verwendet, z. B. zum Löschen/Stornieren eines Elements, und fordert die Leute auf, es zu bemerken.",
+  "noteUseContentSecond": "2. Der Benutzer muss vor dem nächsten Schritt einige Entscheidungen treffen. Wenn der Benutzer auf das Fehlerergebnis achten muss, verwenden Sie den Dialog, um die Warnung anzuzeigen.",
+  "basicUsage": "Grundlegende Nutzung",
+  "layout": "Layout:",
+  "contentLayout": "Standardbreite: 480 Pixel, maximale Höhe kann 80 % der aktuellen Browserhöhe sein. Wenn der Inhaltsbereich voll ist, sollte er beginnen, vertikal zu scrollen. Sie sollten horizontales Scrollen vermeiden.",
+  "header": "Header:",
+  "headerContent": "Geben Sie links einen Titel an und halten Sie den Titel so einfach und intuitiv wie möglich, z. B. „Löschen“, „Warnung“",
+  "button": "Schaltfläche",
+  "buttonContent": "Enthält eine primäre Schaltfläche. Eine sekundäre Schaltfläche ist optional. Die primäre Bestätigungsschaltfläche befindet sich immer auf der rechten Seite. Schreiben Sie Schaltflächenbeschriftungen, die spezifische Antworten auf die Hauptinformationen im Titel darstellen. Der Titel „Diese Datei löschen?“ könnte Schaltflächen mit der Bezeichnung „Löschen“ und „Abbrechen“ haben. Die Esc-Taste wirkt wie ein „Abbrechen“-Effekt.",
+  "openDialog": "Dialog öffnen",
+  "confirm": "Bestätigen"
+}

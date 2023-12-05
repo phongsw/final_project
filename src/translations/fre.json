@@ -1,0 +1,16 @@
+{
+  "titleDialog": "Dialogue",
+  "subTitleDialog": "Les boîtes de dialogue sont un contrôle modal. Il s'agit d'une fenêtre contextuelle temporaire qui demande aux utilisateurs d'interagir avec l'application.",
+  "noteUseTitle": "Quand l'utiliser",
+  "noteUseContentFirst": "1. Il est utilisé pour confirmer des actions, telles que supprimer/annuler un élément, en demandant aux gens de le remarquer.",
+  "noteUseContentSecond": "2. L'utilisateur doit faire certains choix avant l'étape suivante. Lorsque le résultat de l'erreur nécessite que l'utilisateur y prête attention, utilisez la boîte de dialogue pour afficher l'alerte.",
+  "basicUsage": "Utilisation de base",
+  "layout": "Mise en page :",
+  "contentLayout": "Largeur par défaut : 480 px, la hauteur maximale peut être de 80 % x la hauteur actuelle. Hauteur du navigateur. Lorsque l'espace de contenu est plein, il devrait commencer à défiler verticalement. Vous devez éviter le défilement horizontal.",
+  "header": "En-tête :",
+  "headerContent": "Fournissez un titre à gauche et gardez le titre aussi simple et intuitif que possible, comme 'Supprimer' 'Avertissement'",
+  "button": "Bouton",
+  "buttonContent": "Comprend un bouton principal. Un bouton secondaire est facultatif. Le bouton de confirmation principal est toujours placé sur le côté droit. Écrivez des étiquettes de bouton qui sont des réponses spécifiques aux informations principales du titre. Le titre « Supprimer ce fichier ? » pourrait avoir des boutons intitulés « Supprimer » et « Annuler ». La touche Échap agit comme un effet « Annuler ».",
+  "openDialog": "Ouvrir la boîte de dialogue",
+  "confirm": "Confirmer"
+}

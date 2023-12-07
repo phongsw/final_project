@@ -1,15 +1,35 @@
 import { configureStore } from '@reduxjs/toolkit'
+import { persistStore, persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage'
 
 import translateReducer from './translateSlice'
 import changThemeReducer from './changThemeSlice'
 
-export const store = configureStore({
-  reducer: {
-    translate: translateReducer,
-    changeTheme: changThemeReducer
-  }
+const translatePersistConfig = {
+  key: 'translate',
+  storage
+}
+
+const changeThemePersistConfig = {
+  key: 'changeTheme',
+  storage
+}
+
+const persistedTranslateReducer = persistReducer(translatePersistConfig, translateReducer)
+const persistedChangeThemeReducer = persistReducer(changeThemePersistConfig, changThemeReducer)
+
+const rootReducer = {
+  translate: persistedTranslateReducer,
+  changeTheme: persistedChangeThemeReducer
+}
+
+const store = configureStore({
+  reducer: rootReducer
 })
 
-export type RootState = ReturnType<typeof store.getState>
+const persistor = persistStore(store)
 
-export type AppDispatch = typeof store.dispatch
+export { store, persistor }
+
+// Define RootState type
+export type RootState = ReturnType<typeof store.getState>

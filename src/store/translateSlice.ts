@@ -1,17 +1,9 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { EN, GE, FRE, CHI, JP } from '@/constants/constant'
+import { EN } from '@/constants/constant'
 import { LanguageState, PayloadType } from '@/types/translate'
-const localStorageLang = localStorage.getItem('language')
-
-const checkLanguage =
-  localStorageLang === EN ||
-  localStorageLang === FRE ||
-  localStorageLang === CHI ||
-  localStorageLang === JP ||
-  localStorageLang === GE
 
 const initialState: LanguageState = {
-  language: checkLanguage ? localStorageLang : EN
+  language: EN
 }
 
 export const LanguageSlice = createSlice({
@@ -20,7 +12,6 @@ export const LanguageSlice = createSlice({
   reducers: {
     changeLanguage: (state: LanguageState, action: PayloadAction<PayloadType>) => {
       state.language = action.payload
-      localStorage.setItem('language', action.payload)
     }
   }
 })

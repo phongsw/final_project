@@ -39,6 +39,7 @@ export const SearchInput = () => {
     } else if (e.key === 'ArrowDown') {
       // Handle down arrow key to navigate through search results
       e.preventDefault()
+      console.log('e.preventDefault()', e.preventDefault())
       setSelectedItemIndex((prevIndex) =>
         prevIndex === null ? 0 : Math.min(prevIndex + 1, searchResults.length - 1)
       )
@@ -59,7 +60,8 @@ export const SearchInput = () => {
 
   const handleResultClick = (index: number) => {
     setSelectedItemIndex(index)
-    setSearchInputStr(searchResults[index].name)
+    setSearchInputStr('')
+    setSearchResults([])
   }
 
   const searchInput = (arr: ISearchItem[], searchText: string): ISearchItem[] => {
@@ -88,7 +90,7 @@ export const SearchInput = () => {
           />
         </Stack>
       </Stack>
-      {searchResults && (
+      {searchResults && searchResults.length > 0 && (
         <ul className='list-search-result'>
           {searchResults.map((itemSearch: ISearchItem, index: number) => (
             <li

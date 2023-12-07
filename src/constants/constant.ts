@@ -23,8 +23,7 @@ const themeOptions: IDropdownOption[] = [
   { key: Themes.Magenta, text: 'Theme: Magenta' },
   { key: Themes.Lavender, text: 'Theme: Lavender' },
   { key: Themes.Pewter, text: 'Theme: Pewter' },
-  { key: Themes.Mint, text: 'Theme: Mint' },
-  { key: 'ThemeDesigner', text: 'Custom theme color' }
+  { key: Themes.Mint, text: 'Theme: Mint' }
 ]
 
 const headerStyle: React.CSSProperties = {

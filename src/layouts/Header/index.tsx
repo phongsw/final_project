@@ -1,5 +1,4 @@
 import { Stack, Dropdown } from '@gui/fluent-ui-allure'
-import { initialize, Lang } from '@gui/common-i18n-terms'
 
 import Logo from '@/assets/img/logo.png'
 import './style.scss'
@@ -7,7 +6,6 @@ import { SearchInput } from './SearchInput'
 import { useDispatch, useSelector } from 'react-redux'
 import { changeLanguage } from '@/store/translateSlice'
 import {
-  EN,
   comboBoxStyles,
   headerStyle,
   langOptions,
@@ -21,10 +19,9 @@ import { useState } from 'react'
 export const Header = () => {
   const dispatch = useDispatch()
   const themeStore = useSelector((state: RootState) => state.changeTheme.currentTheme)
-  const [lang, setLang] = useState<Lang>(EN)
-  const [theme, setTheme] = useState<any>(themeStore)
-
-  initialize(lang)
+  const langStore = useSelector((state: RootState) => state.translate.language)
+  const [lang, setLang] = useState(langStore)
+  const [theme, setTheme] = useState(themeStore)
 
   const onThemeChanged = (key: any) => {
     setTheme(key)
